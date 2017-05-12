@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KonnektingDevice xmlns="http://konnekting.de/xml/KonnektingDevice/v0" 
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                  xsi:schemaLocation="http://konnekting.de/xml/KonnektingDevice/v0 http://konnekting.de/xml/KonnektingDevice/KonnektingDeviceV0.xsd">
+    <Device ManufacturerId="7070" DeviceId="201" Revision="0">
+        <ManufacturerName>KONNEKTING</ManufacturerName>
+        <DeviceName>Alexa on KNX</DeviceName>
+        <Parameters>
+            <ParameterGroup Name="General" Id="0">
+                <Parameter Id="0" IdName="initialDelay">
+                    <Description>Startup delay [0..65535ms]</Description>
+                    <Value Type="uint16" Default="0000" Options="" Min="0000" Max="FFFF"/>
+                </Parameter>
+				<Parameter Id="1" IdName="param1">
+                    <Description>WiFi SSID part 1 (max 11 character)</Description>
+                    <Value Type="string11" Default="0000000000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="2" IdName="param2">
+                    <Description>WiFi SSID part 2 (max 11 character)</Description>
+                    <Value Type="string11" Default="0000000000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="3" IdName="param3">
+                    <Description>WiFi password part 1 (max 11 character)</Description>
+                    <Value Type="string11" Default="0000000000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="4" IdName="param4">
+                    <Description>WiFi password part 2 (max 11 character)</Description>
+                    <Value Type="string11" Default="0000000000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+			</ParameterGroup>
+			<ParameterGroup Name="Device 1" Id="1">
+                <Parameter Id="5" IdName="device1Active">
+                    <Description>Active</Description>
+                    <Value Type="uint8" Default="00" Options="00=inactive|01=on/off|02=scene" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="6" IdName="device1Room">
+                    <Description>Room</Description>
+                    <Value Type="string11" Default="0000000000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="7" IdName="device1Name">
+                    <Description>Name</Description>
+                    <Value Type="string11" Default="0000000000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="8" IdName="device1OnOff">
+                    <Description>value for on/off</Description>
+                    <Value Type="uint8" Default="00" Options="00=1/0|01=0/1" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="9" IdName="device1Scene">
+                    <Description>Scene number</Description>
+                    <Value Type="uint8" Default="00" Options="00=1|01=2|02=3|03=4|04=5|05=6|06=7|07=8|08=9|09=10|0A=11|0B=12|0C=13|0D=14|0E=15|0F=16|10=17|11=18|12=19|13=20|14=21|15=22|16=23|17=24|18=25|19=26|1A=27|1B=28|1C=29|1D=30|1E=31|1F=32|20=33|21=34|22=35|23=36|24=37|25=38|26=39|27=40|28=41|29=42|2A=43|2B=44|2C=45|2D=46|2E=47|2F=48|30=49|31=50|32=51|33=52|34=53|35=54|36=55|37=56|38=57|39=58|3A=59|3B=60|3C=61|3D=62|3E=63|3F=64" Min="" Max=""/>
+                </Parameter>
+            </ParameterGroup>
+			<ParameterGroup Name="Device 2" Id="2">
+                <Parameter Id="10" IdName="device2Active">
+                    <Description>Active</Description>
+                    <Value Type="uint8" Default="00" Options="00=inactive|01=on/off|02=scene" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="11" IdName="device2Room">
+                    <Description>Room</Description>
+                    <Value Type="string11" Default="0000000000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="12" IdName="device2Name">
+                    <Description>Name</Description>
+                    <Value Type="string11" Default="0000000000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="13" IdName="device2OnOff">
+                    <Description>value for on/off</Description>
+                    <Value Type="uint8" Default="00" Options="00=1/0|01=0/1" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="14" IdName="device2Scene">
+                    <Description>Scene number</Description>
+                    <Value Type="uint8" Default="00" Options="00=1|01=2|02=3|03=4|04=5|05=6|06=7|07=8|08=9|09=10|0A=11|0B=12|0C=13|0D=14|0E=15|0F=16|10=17|11=18|12=19|13=20|14=21|15=22|16=23|17=24|18=25|19=26|1A=27|1B=28|1C=29|1D=30|1E=31|1F=32|20=33|21=34|22=35|23=36|24=37|25=38|26=39|27=40|28=41|29=42|2A=43|2B=44|2C=45|2D=46|2E=47|2F=48|30=49|31=50|32=51|33=52|34=53|35=54|36=55|37=56|38=57|39=58|3A=59|3B=60|3C=61|3D=62|3E=63|3F=64" Min="" Max=""/>
+                </Parameter>
+            </ParameterGroup>
+			<ParameterGroup Name="Device 3" Id="3">
+                <Parameter Id="15" IdName="device3Active">
+                    <Description>Active</Description>
+                    <Value Type="uint8" Default="00" Options="00=inactive|01=on/off|02=scene" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="16" IdName="device3Room">
+                    <Description>Room</Description>
+                    <Value Type="string11" Default="0000000000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="17" IdName="device3Name">
+                    <Description>Name</Description>
+                    <Value Type="string11" Default="0000000000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="18" IdName="device3OnOff">
+                    <Description>value for on/off</Description>
+                    <Value Type="uint8" Default="00" Options="00=1/0|01=0/1" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="19" IdName="device3Scene">
+                    <Description>Scene number</Description>
+                    <Value Type="uint8" Default="00" Options="00=1|01=2|02=3|03=4|04=5|05=6|06=7|07=8|08=9|09=10|0A=11|0B=12|0C=13|0D=14|0E=15|0F=16|10=17|11=18|12=19|13=20|14=21|15=22|16=23|17=24|18=25|19=26|1A=27|1B=28|1C=29|1D=30|1E=31|1F=32|20=33|21=34|22=35|23=36|24=37|25=38|26=39|27=40|28=41|29=42|2A=43|2B=44|2C=45|2D=46|2E=47|2F=48|30=49|31=50|32=51|33=52|34=53|35=54|36=55|37=56|38=57|39=58|3A=59|3B=60|3C=61|3D=62|3E=63|3F=64" Min="" Max=""/>
+                </Parameter>
+            </ParameterGroup>
+			<ParameterGroup Name="Device 4" Id="4">
+                <Parameter Id="20" IdName="device4Active">
+                    <Description>Active</Description>
+                    <Value Type="uint8" Default="00" Options="00=inactive|01=on/off|02=scene" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="21" IdName="device4Room">
+                    <Description>Room</Description>
+                    <Value Type="string11" Default="0000000000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="22" IdName="device4Name">
+                    <Description>Name</Description>
+                    <Value Type="string11" Default="0000000000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="23" IdName="device4OnOff">
+                    <Description>value for on/off</Description>
+                    <Value Type="uint8" Default="00" Options="00=1/0|01=0/1" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="24" IdName="device4Scene">
+                    <Description>Scene number</Description>
+                    <Value Type="uint8" Default="00" Options="00=1|01=2|02=3|03=4|04=5|05=6|06=7|07=8|08=9|09=10|0A=11|0B=12|0C=13|0D=14|0E=15|0F=16|10=17|11=18|12=19|13=20|14=21|15=22|16=23|17=24|18=25|19=26|1A=27|1B=28|1C=29|1D=30|1E=31|1F=32|20=33|21=34|22=35|23=36|24=37|25=38|26=39|27=40|28=41|29=42|2A=43|2B=44|2C=45|2D=46|2E=47|2F=48|30=49|31=50|32=51|33=52|34=53|35=54|36=55|37=56|38=57|39=58|3A=59|3B=60|3C=61|3D=62|3E=63|3F=64" Min="" Max=""/>
+                </Parameter>
+            </ParameterGroup>
+			<ParameterGroup Name="Device 5" Id="5">
+                <Parameter Id="25" IdName="device5Active">
+                    <Description>Active</Description>
+                    <Value Type="uint8" Default="00" Options="00=inactive|01=on/off|02=scene" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="26" IdName="device5Room">
+                    <Description>Room</Description>
+                    <Value Type="string11" Default="0000000000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="27" IdName="device5Name">
+                    <Description>Name</Description>
+                    <Value Type="string11" Default="0000000000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="28" IdName="device5OnOff">
+                    <Description>value for on/off</Description>
+                    <Value Type="uint8" Default="00" Options="00=1/0|01=0/1" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="29" IdName="device5Scene">
+                    <Description>Scene number</Description>
+                    <Value Type="uint8" Default="00" Options="00=1|01=2|02=3|03=4|04=5|05=6|06=7|07=8|08=9|09=10|0A=11|0B=12|0C=13|0D=14|0E=15|0F=16|10=17|11=18|12=19|13=20|14=21|15=22|16=23|17=24|18=25|19=26|1A=27|1B=28|1C=29|1D=30|1E=31|1F=32|20=33|21=34|22=35|23=36|24=37|25=38|26=39|27=40|28=41|29=42|2A=43|2B=44|2C=45|2D=46|2E=47|2F=48|30=49|31=50|32=51|33=52|34=53|35=54|36=55|37=56|38=57|39=58|3A=59|3B=60|3C=61|3D=62|3E=63|3F=64" Min="" Max=""/>
+                </Parameter>
+            </ParameterGroup>
+			<ParameterGroup Name="Device 6" Id="6">
+                <Parameter Id="30" IdName="device6Active">
+                    <Description>Active</Description>
+                    <Value Type="uint8" Default="00" Options="00=inactive|01=on/off|02=scene" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="31" IdName="device6Room">
+                    <Description>Room</Description>
+                    <Value Type="string11" Default="0000000000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="32" IdName="device6Name">
+                    <Description>Name</Description>
+                    <Value Type="string11" Default="0000000000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="33" IdName="device6OnOff">
+                    <Description>value for on/off</Description>
+                    <Value Type="uint8" Default="00" Options="00=1/0|01=0/1" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="34" IdName="device6Scene">
+                    <Description>Scene number</Description>
+                    <Value Type="uint8" Default="00" Options="00=1|01=2|02=3|03=4|04=5|05=6|06=7|07=8|08=9|09=10|0A=11|0B=12|0C=13|0D=14|0E=15|0F=16|10=17|11=18|12=19|13=20|14=21|15=22|16=23|17=24|18=25|19=26|1A=27|1B=28|1C=29|1D=30|1E=31|1F=32|20=33|21=34|22=35|23=36|24=37|25=38|26=39|27=40|28=41|29=42|2A=43|2B=44|2C=45|2D=46|2E=47|2F=48|30=49|31=50|32=51|33=52|34=53|35=54|36=55|37=56|38=57|39=58|3A=59|3B=60|3C=61|3D=62|3E=63|3F=64" Min="" Max=""/>
+                </Parameter>
+            </ParameterGroup>
+			<ParameterGroup Name="Device 7" Id="7">
+                <Parameter Id="35" IdName="device7Active">
+                    <Description>Active</Description>
+                    <Value Type="uint8" Default="00" Options="00=inactive|01=on/off|02=scene" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="36" IdName="device7Room">
+                    <Description>Room</Description>
+                    <Value Type="string11" Default="0000000000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="37" IdName="device7Name">
+                    <Description>Name</Description>
+                    <Value Type="string11" Default="0000000000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="38" IdName="device7OnOff">
+                    <Description>value for on/off</Description>
+                    <Value Type="uint8" Default="00" Options="00=1/0|01=0/1" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="39" IdName="device7Scene">
+                    <Description>Scene number</Description>
+                    <Value Type="uint8" Default="00" Options="00=1|01=2|02=3|03=4|04=5|05=6|06=7|07=8|08=9|09=10|0A=11|0B=12|0C=13|0D=14|0E=15|0F=16|10=17|11=18|12=19|13=20|14=21|15=22|16=23|17=24|18=25|19=26|1A=27|1B=28|1C=29|1D=30|1E=31|1F=32|20=33|21=34|22=35|23=36|24=37|25=38|26=39|27=40|28=41|29=42|2A=43|2B=44|2C=45|2D=46|2E=47|2F=48|30=49|31=50|32=51|33=52|34=53|35=54|36=55|37=56|38=57|39=58|3A=59|3B=60|3C=61|3D=62|3E=63|3F=64" Min="" Max=""/>
+                </Parameter>
+            </ParameterGroup>
+			<ParameterGroup Name="Device 8" Id="8">
+                <Parameter Id="40" IdName="device8Active">
+                    <Description>Active</Description>
+                    <Value Type="uint8" Default="00" Options="00=inactive|01=on/off|02=scene" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="41" IdName="device8Room">
+                    <Description>Room</Description>
+                    <Value Type="string11" Default="0000000000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="42" IdName="device8Name">
+                    <Description>Name</Description>
+                    <Value Type="string11" Default="0000000000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="43" IdName="device8OnOff">
+                    <Description>value for on/off</Description>
+                    <Value Type="uint8" Default="00" Options="00=1/0|01=0/1" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="44" IdName="device8Scene">
+                    <Description>Scene number</Description>
+                    <Value Type="uint8" Default="00" Options="00=1|01=2|02=3|03=4|04=5|05=6|06=7|07=8|08=9|09=10|0A=11|0B=12|0C=13|0D=14|0E=15|0F=16|10=17|11=18|12=19|13=20|14=21|15=22|16=23|17=24|18=25|19=26|1A=27|1B=28|1C=29|1D=30|1E=31|1F=32|20=33|21=34|22=35|23=36|24=37|25=38|26=39|27=40|28=41|29=42|2A=43|2B=44|2C=45|2D=46|2E=47|2F=48|30=49|31=50|32=51|33=52|34=53|35=54|36=55|37=56|38=57|39=58|3A=59|3B=60|3C=61|3D=62|3E=63|3F=64" Min="" Max=""/>
+                </Parameter>
+            </ParameterGroup>
+			<ParameterGroup Name="Device 9" Id="9">
+                <Parameter Id="45" IdName="device9Active">
+                    <Description>Active</Description>
+                    <Value Type="uint8" Default="00" Options="00=inactive|01=on/off|02=scene" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="46" IdName="device9Room">
+                    <Description>Room</Description>
+                    <Value Type="string11" Default="0000000000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="47" IdName="device9Name">
+                    <Description>Name</Description>
+                    <Value Type="string11" Default="0000000000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="48" IdName="device9OnOff">
+                    <Description>value for on/off</Description>
+                    <Value Type="uint8" Default="00" Options="00=1/0|01=0/1" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="49" IdName="device9Scene">
+                    <Description>Scene number</Description>
+                    <Value Type="uint8" Default="00" Options="00=1|01=2|02=3|03=4|04=5|05=6|06=7|07=8|08=9|09=10|0A=11|0B=12|0C=13|0D=14|0E=15|0F=16|10=17|11=18|12=19|13=20|14=21|15=22|16=23|17=24|18=25|19=26|1A=27|1B=28|1C=29|1D=30|1E=31|1F=32|20=33|21=34|22=35|23=36|24=37|25=38|26=39|27=40|28=41|29=42|2A=43|2B=44|2C=45|2D=46|2E=47|2F=48|30=49|31=50|32=51|33=52|34=53|35=54|36=55|37=56|38=57|39=58|3A=59|3B=60|3C=61|3D=62|3E=63|3F=64" Min="" Max=""/>
+                </Parameter>
+            </ParameterGroup>
+			<ParameterGroup Name="Device 10" Id="10">
+                <Parameter Id="50" IdName="device10Active">
+                    <Description>Active</Description>
+                    <Value Type="uint8" Default="00" Options="00=inactive|01=on/off|02=scene" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="51" IdName="device10Room">
+                    <Description>Room</Description>
+                    <Value Type="string11" Default="0000000000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="52" IdName="device10Name">
+                    <Description>Name</Description>
+                    <Value Type="string11" Default="0000000000000000000000" Options="" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="53" IdName="device10OnOff">
+                    <Description>value for on/off</Description>
+                    <Value Type="uint8" Default="00" Options="00=1/0|01=0/1" Min="" Max=""/>
+                </Parameter>
+				<Parameter Id="54" IdName="device10Scene">
+                    <Description>Scene number</Description>
+                    <Value Type="uint8" Default="00" Options="00=1|01=2|02=3|03=4|04=5|05=6|06=7|07=8|08=9|09=10|0A=11|0B=12|0C=13|0D=14|0E=15|0F=16|10=17|11=18|12=19|13=20|14=21|15=22|16=23|17=24|18=25|19=26|1A=27|1B=28|1C=29|1D=30|1E=31|1F=32|20=33|21=34|22=35|23=36|24=37|25=38|26=39|27=40|28=41|29=42|2A=43|2B=44|2C=45|2D=46|2E=47|2F=48|30=49|31=50|32=51|33=52|34=53|35=54|36=55|37=56|38=57|39=58|3A=59|3B=60|3C=61|3D=62|3E=63|3F=64" Min="" Max=""/>
+                </Parameter>
+            </ParameterGroup>
+			
+
+        </Parameters>
+        <CommObjects>
+            <CommObject Id="0" IdName="device1bool">
+                <Name>Device 1</Name>
+                <Function>on/off</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="1" IdName="device1scene">
+                <Name>Device 1</Name>
+                <Function>scene</Function>
+                <DataPointType>17.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+            <CommObject Id="2" IdName="device2bool">
+                <Name>Device 2</Name>
+                <Function>on/off</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="3" IdName="device2scene">
+                <Name>Device 2</Name>
+                <Function>scene</Function>
+                <DataPointType>17.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="4" IdName="device3bool">
+                <Name>Device 3</Name>
+                <Function>on/off</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="5" IdName="device3scene">
+                <Name>Device 3</Name>
+                <Function>scene</Function>
+                <DataPointType>17.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="6" IdName="device4bool">
+                <Name>Device 4</Name>
+                <Function>on/off</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="7" IdName="device4scene">
+                <Name>Device 4</Name>
+                <Function>scene</Function>
+                <DataPointType>17.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="8" IdName="device5bool">
+                <Name>Device 5</Name>
+                <Function>on/off</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="9" IdName="device5scene">
+                <Name>Device 5</Name>
+                <Function>scene</Function>
+                <DataPointType>17.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="10" IdName="device6bool">
+                <Name>Device 6</Name>
+                <Function>on/off</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="11" IdName="device6scene">
+                <Name>Device 6</Name>
+                <Function>scene</Function>
+                <DataPointType>17.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="12" IdName="device7bool">
+                <Name>Device 7</Name>
+                <Function>on/off</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="13" IdName="device7scene">
+                <Name>Device 7</Name>
+                <Function>scene</Function>
+                <DataPointType>17.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="14" IdName="device8bool">
+                <Name>Device 8</Name>
+                <Function>on/off</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="15" IdName="device8scene">
+                <Name>Device 8</Name>
+                <Function>scene</Function>
+                <DataPointType>17.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="16" IdName="device9bool">
+                <Name>Device 9</Name>
+                <Function>on/off</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="17" IdName="device9scene">
+                <Name>Device 9</Name>
+                <Function>scene</Function>
+                <DataPointType>17.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="18" IdName="device10bool">
+                <Name>Device 10</Name>
+                <Function>on/off</Function>
+                <DataPointType>1.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+			<CommObject Id="19" IdName="device10scene">
+                <Name>Device 10</Name>
+                <Function>scene</Function>
+                <DataPointType>17.001</DataPointType>
+                <Flags>52</Flags>
+            </CommObject>
+        </CommObjects>
+		<Dependencies>
+			<ParameterDependency ParamId="6" Test="ne" TestParamId="5" TestValue="00"/>
+			<ParameterDependency ParamId="7" Test="ne" TestParamId="5" TestValue="00"/>
+			<ParameterDependency ParamId="8" Test="eq" TestParamId="5" TestValue="01"/>
+			<ParameterDependency ParamId="9" Test="eq" TestParamId="5" TestValue="02"/>
+			<ParameterDependency ParamId="11" Test="ne" TestParamId="10" TestValue="00"/>
+			<ParameterDependency ParamId="12" Test="ne" TestParamId="10" TestValue="00"/>
+			<ParameterDependency ParamId="13" Test="eq" TestParamId="10" TestValue="01"/>
+			<ParameterDependency ParamId="14" Test="eq" TestParamId="10" TestValue="02"/>
+			<ParameterDependency ParamId="16" Test="ne" TestParamId="15" TestValue="00"/>
+			<ParameterDependency ParamId="17" Test="ne" TestParamId="15" TestValue="00"/>
+			<ParameterDependency ParamId="18" Test="eq" TestParamId="15" TestValue="01"/>
+			<ParameterDependency ParamId="19" Test="eq" TestParamId="15" TestValue="02"/>
+			<ParameterDependency ParamId="21" Test="ne" TestParamId="20" TestValue="00"/>
+			<ParameterDependency ParamId="22" Test="ne" TestParamId="20" TestValue="00"/>
+			<ParameterDependency ParamId="23" Test="eq" TestParamId="20" TestValue="01"/>
+			<ParameterDependency ParamId="24" Test="eq" TestParamId="20" TestValue="02"/>
+			<ParameterDependency ParamId="26" Test="ne" TestParamId="25" TestValue="00"/>
+			<ParameterDependency ParamId="27" Test="ne" TestParamId="25" TestValue="00"/>
+			<ParameterDependency ParamId="28" Test="eq" TestParamId="25" TestValue="01"/>
+			<ParameterDependency ParamId="29" Test="eq" TestParamId="25" TestValue="02"/>
+			<ParameterDependency ParamId="31" Test="ne" TestParamId="30" TestValue="00"/>
+			<ParameterDependency ParamId="32" Test="ne" TestParamId="30" TestValue="00"/>
+			<ParameterDependency ParamId="33" Test="eq" TestParamId="30" TestValue="01"/>
+			<ParameterDependency ParamId="34" Test="eq" TestParamId="30" TestValue="02"/>
+			<ParameterDependency ParamId="36" Test="ne" TestParamId="35" TestValue="00"/>
+			<ParameterDependency ParamId="37" Test="ne" TestParamId="35" TestValue="00"/>
+			<ParameterDependency ParamId="38" Test="eq" TestParamId="35" TestValue="01"/>
+			<ParameterDependency ParamId="39" Test="eq" TestParamId="35" TestValue="02"/>
+			<ParameterDependency ParamId="41" Test="ne" TestParamId="40" TestValue="00"/>
+			<ParameterDependency ParamId="42" Test="ne" TestParamId="40" TestValue="00"/>
+			<ParameterDependency ParamId="43" Test="eq" TestParamId="40" TestValue="01"/>
+			<ParameterDependency ParamId="44" Test="eq" TestParamId="40" TestValue="02"/>
+			<ParameterDependency ParamId="46" Test="ne" TestParamId="45" TestValue="00"/>
+			<ParameterDependency ParamId="47" Test="ne" TestParamId="45" TestValue="00"/>
+			<ParameterDependency ParamId="48" Test="eq" TestParamId="45" TestValue="01"/>
+			<ParameterDependency ParamId="49" Test="eq" TestParamId="45" TestValue="02"/>
+			<ParameterDependency ParamId="51" Test="ne" TestParamId="50" TestValue="00"/>
+			<ParameterDependency ParamId="52" Test="ne" TestParamId="50" TestValue="00"/>
+			<ParameterDependency ParamId="53" Test="eq" TestParamId="50" TestValue="01"/>
+			<ParameterDependency ParamId="54" Test="eq" TestParamId="50" TestValue="02"/>
+			<CommObjectDependency CommObjId="0" Test="eq" TestParamId="5" TestValue="01"/>
+			<CommObjectDependency CommObjId="1" Test="eq" TestParamId="5" TestValue="02"/>
+			<CommObjectDependency CommObjId="2" Test="eq" TestParamId="10" TestValue="01"/>
+			<CommObjectDependency CommObjId="3" Test="eq" TestParamId="10" TestValue="02"/>
+			<CommObjectDependency CommObjId="4" Test="eq" TestParamId="15" TestValue="01"/>
+			<CommObjectDependency CommObjId="5" Test="eq" TestParamId="15" TestValue="02"/>
+			<CommObjectDependency CommObjId="6" Test="eq" TestParamId="20" TestValue="01"/>
+			<CommObjectDependency CommObjId="7" Test="eq" TestParamId="20" TestValue="02"/>
+			<CommObjectDependency CommObjId="8" Test="eq" TestParamId="25" TestValue="01"/>
+			<CommObjectDependency CommObjId="9" Test="eq" TestParamId="25" TestValue="02"/>
+			<CommObjectDependency CommObjId="10" Test="eq" TestParamId="30" TestValue="01"/>
+			<CommObjectDependency CommObjId="11" Test="eq" TestParamId="30" TestValue="02"/>
+			<CommObjectDependency CommObjId="12" Test="eq" TestParamId="35" TestValue="01"/>
+			<CommObjectDependency CommObjId="13" Test="eq" TestParamId="35" TestValue="02"/>
+			<CommObjectDependency CommObjId="14" Test="eq" TestParamId="40" TestValue="01"/>
+			<CommObjectDependency CommObjId="15" Test="eq" TestParamId="40" TestValue="02"/>
+			<CommObjectDependency CommObjId="16" Test="eq" TestParamId="45" TestValue="01"/>
+			<CommObjectDependency CommObjId="17" Test="eq" TestParamId="45" TestValue="02"/>
+			<CommObjectDependency CommObjId="18" Test="eq" TestParamId="50" TestValue="01"/>
+			<CommObjectDependency CommObjId="19" Test="eq" TestParamId="50" TestValue="02"/>
+		</Dependencies>
+    </Device>
+</KonnektingDevice>
